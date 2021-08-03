@@ -1,0 +1,61 @@
+
+// Nạp plugin
+plugins {
+        id 'com.android.application'
+        }
+
+
+
+// Nạp android
+android {
+        compileSdkVersion 31
+        buildToolsVersion "30.0.3"
+
+
+        // Nạp defaultConfig
+        defaultConfig   {
+                        applicationId "com.example.capturemyscreen"
+                        minSdkVersion 16
+                        targetSdkVersion 31
+                        versionCode 1
+                        versionName "1.0"
+
+                        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+                        }
+
+
+        // Nạp buildTypes
+        buildTypes {
+                    release {
+                            minifyEnabled false
+                            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                            }
+                    }
+
+
+        // Nạp compileOptions
+        compileOptions {
+                        sourceCompatibility JavaVersion.VERSION_1_8
+                        targetCompatibility JavaVersion.VERSION_1_8
+                        }
+        }
+
+
+
+// Nạp dependencies
+dependencies {
+
+            // Nạp implementation
+            implementation 'androidx.appcompat:appcompat:1.3.1'
+            implementation 'com.google.android.material:material:1.4.0'
+            implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+            // Nạp testImplementation
+            testImplementation 'junit:junit:4.+'
+
+            // Nạp androidTestImplementation
+            androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+            androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+// Share on Github. Now ,go to VCS > Import into Version Control > Share project on Github.

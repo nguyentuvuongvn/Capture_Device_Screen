@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capturemyscreen">
+
+
+
+    <!-- đọc dữ liệu trên thẻ nhớ -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- viết dữ liệu lên thẻ nhớ -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+
+    <!-- Thông tin ứng dụng -->
+    <!-- TODO: bổ sung thêm android:requestLegacyExternalStorage="true để lưu file vào máy -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaptureMyScreen"
+
+        android:requestLegacyExternalStorage="true" >
+
+
+
+        <!-- Thông tin ứng dụng -->
+        <!-- TODO: bổ sung thêm android:exported="true" để ứng dụng tự động chạy -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+
+
+            <!-- Thông tin ứng dụng -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

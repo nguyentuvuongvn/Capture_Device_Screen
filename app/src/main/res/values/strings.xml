@@ -1,0 +1,9 @@
+<resources>
+
+
+    <!-- TODO: vào app > res > NEW > ANDROID RESOURCE DIRECTORY > raw -->
+    <!-- rồi PASTE bổ sung file âm thanh chụp màn hình -->
+    <!-- TODO: Chỉnh tên của ứng dụng khi mở phần mềm -->
+    <string name="app_name">Capture My Screen</string>
+
+</resources>
